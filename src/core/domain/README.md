@@ -1,1 +1,1 @@
-# User, Role, Policy, Rule, Condition
+# User, Role, Permission, Rule, Condition
