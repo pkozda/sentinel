@@ -1,4 +1,4 @@
-import { Role } from "./role";
+import { Rule } from "./rule";
 
 export type PermissionEffect = "allow" | "deny";
 
@@ -8,5 +8,5 @@ export interface Permission {
     name: string;
     effect: PermissionEffect;
     priority: number;
-    roles: Role[];
+    rules: Rule[];
 }
