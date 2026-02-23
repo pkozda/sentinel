@@ -4,7 +4,7 @@ export type ResourceType = "database" | "dashboard" | "hr-record" | "activity-lo
 export type ActionType = "read" | "write" | "delete" | "manage";
 
 export interface Rule {
-    resource: ResourceType;
-    action: ActionType;
-    condition?: Condition;
+	resource: ResourceType;
+	action: ActionType;
+	condition?: Condition;
 }
