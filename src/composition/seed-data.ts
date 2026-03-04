@@ -14,6 +14,17 @@ export const SEED_USERS: User[] = [
 		},
 		roleIds: ["r1"],
 	},
+	{
+		id: "admin1",
+		attributes: {
+			department: "engineering",
+			position: "admin",
+			seniorityLevel: "senior",
+			location: "DE",
+			active: true,
+		},
+		roleIds: ["admin"],
+	},
 ];
 
 export const SEED_ROLES: Role[] = [
@@ -21,6 +32,11 @@ export const SEED_ROLES: Role[] = [
 		id: "r1",
 		name: "Viewer",
 		permissionIds: ["perm1"],
+	},
+	{
+		id: "admin",
+		name: "Admin",
+		permissionIds: ["perm1", "perm2"],
 	},
 ];
 
@@ -31,5 +47,12 @@ export const SEED_PERMISSIONS: Permission[] = [
 		effect: "allow",
 		priority: 1,
 		rules: [{ resource: "database", action: "read" }],
+	},
+	{
+		id: "perm2",
+		name: "Database write",
+		effect: "allow",
+		priority: 1,
+		rules: [{ resource: "database", action: "write" }],
 	},
 ];
