@@ -30,7 +30,6 @@ export default function AccessPlayground() {
 		setResult(decision.result);
 		setReason(decision.reason);
 	}
-
 	return (
 		<main style={{ padding: 40, fontFamily: "sans-serif" }}>
 			<h1>Sentinel Access Hub</h1>
